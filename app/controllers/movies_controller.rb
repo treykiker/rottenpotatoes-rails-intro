@@ -51,7 +51,7 @@ class MoviesController < ApplicationController
     elsif @sort_column
       @movies = Movie.order(@sort_column)
     else
-      @movie = Movie.all
+      @movies = Movie.all
     end
       
     if !@set_ratings
